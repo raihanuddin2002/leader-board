@@ -4,13 +4,48 @@ body{
     background: #F3F1FF;
     margin: 0px;
 }
-
+/* Header part */ 
+.header-section {
+    width: 100%;
+    background:  #562EFF;
+}
+.header-content{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-part{
+    display: flex;
+    align-items: center;
+}
+.logo-part img{
+    width: 50px;
+    height: 50px;
+}
+.logo-title{
+    margin-left: 15px;
+    color: white;
+    font-size: 24px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu li{
+    list-style: none;
+    margin-left: 35px;
+    color: white;
+    font-weight: normal;
+}
 /* top players style */
 .top-players{
     background-color: white;
-    max-width: 50%;
+    max-width: 47%;
     margin: 0 auto;
     padding: 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 .top-players-heading{
     color: #562EFF;
@@ -40,10 +75,12 @@ body{
 /* top blog style */
 .top-blog{
     background-color: white;
-    max-width: 50%;
+    max-width: 47%;
     margin: 0 auto;
     padding: 30px;
     line-height: 24px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 .top-blogs-heading{
     color: #562EFF;
@@ -79,4 +116,70 @@ body{
 }
 .blog-author-name{
     color:#562EFF;
+}
+
+/* top courses style */
+.top-courses{
+    background-color: white;
+    max-width: 47%;
+    margin: 30px auto;
+    padding: 30px;
+}
+.top-courses-heading{
+    color: #562EFF;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 3px;
+}
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 25px;
+    width: 30%;
+}
+.course{
+    box-shadow: 0px 5px 13px rgba(218, 209, 209, 0.37) ;
+    padding: 10px;
+    border-radius: 15px;
+}
+.courses img{
+    width: 260px;
+    height: 120px;
+}
+.courses-name{
+    font-weight: normal;
+    margin-left: 5px;
+    font-size: 18px;
+}
+.course-tutor{
+    margin-left: 5px;
+    color: #ED6B4F;
+}
+.ratting-duration{
+    margin-left: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ratting-duration img{
+    width: 11px;
+    height: 11px;
+    padding-right: 3px;
+}
+.duration{
+    display: flex;
+    align-items: center;
+    color: #FF4A60;
+    background: #FFE4E8;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+#clock{
+    width: 25px;
+    height: 25px;
+}
+.container{
+    border-radius: 5px;
 }
